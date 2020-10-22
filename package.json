@@ -1,0 +1,30 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "Jest intro",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchward/UnitTesting.git"
+  },
+  "keywords": [
+    "js",
+    "jest",
+    "javascript"
+  ],
+  "author": "Edward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luchward/UnitTesting/issues"
+  },
+  "homepage": "https://github.com/luchward/UnitTesting#readme",
+  "devDependencies": {
+    "jest": "^26.6.0"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.15"
+  }
+}

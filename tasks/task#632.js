@@ -7,24 +7,21 @@ ak) и вставить элемент, равный p, так, чтобы не 
 
 function removeIndex(k, p){
   let arr=[-24,-10,-5,-1, 0, 3, 4, 6, 9, 45, 98, 145];
-  if(k<=arr.length){
+  if(k <= arr.length){
     arr.splice(k-1, 1);
   }
   else{
     return -1;
   }
-  console.log(arr);
-  arr.find((value, index)=>{
-      if(value>p){
-        arr.splice(index, 0, p);
-        return index;
-      }
-      else{
-        arr.push(p)
-        return 1;
-      }
+  if(arr[arr.length-1] < p){
+    arr.push(p);
+  }
+  for(let i = 0; i < arr.length; ++i){
+    if( p < arr[i]){
+      arr.splice(i, 0, p);
+      break;
     }
-  );
+  }
   return arr;
 }
 
@@ -35,5 +32,5 @@ function removeIndex(k, p){
 //   idx >= 0 ? array.splice(idx, 0, p) : array.push(p);
 //   return array;
 // }
-
+//
 module.exports = removeIndex;
